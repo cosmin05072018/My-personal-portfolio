@@ -34,19 +34,36 @@ ul{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 30px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+
+.main-content{
+    padding-left: 270px;
+    
 }
 
 .padd-15
 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 .container
@@ -99,7 +116,7 @@ ul{
 
 .aside .logo a span{
     font-family: 'Clicker Script', cursive;
-    font-family: 40px;
+    font-size: 40px;
 }
 
 
@@ -219,6 +236,22 @@ h3.hello span {
     font-weight: 700;
     color: var(--skin-color);
 }
+
+h3.my-profession{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing{
+    color: var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
@@ -226,6 +259,32 @@ h3.hello span {
     position: relative;
 }
 
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 20px;
+    bottom: -40px;
+    border-radius: 10px;
+}
+
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
+    border-radius: 10px;
+}
+
 .home .home-img img {
+    margin: auto;
+    border-radius: 10px;
     height: 400px;
 }
