@@ -11,25 +11,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="colorForWebsSite.css">
   </head>
   <body>
     <!--MAIN CONTAINER START-->
     <div class="main-container">
       <!--ASIDE START-->
       <div class="aside">
-          aside
+          <div class="logo">
+              <a href="#">Front<span>End</span></a>
+          </div>
+          <div class="nav-toggler"><span></span>
+          </div>
+          <ul class="nav">
+              <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+              <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
+              <li><a href="#"><i class="fa fa-briefcase"></i>Portofolio</a></li>
+              <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+          </ul>
       </div>
       <!--ASIDE END-->
     <!--MAIN CONTENT START-->
     <div class="main-content">
         <!--HOME SECTION START-->
-        <div class="home section">
-            Home
-        </div>
+        <section class="home section">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello">Hello, my name is <span class="name">Cosmin Morari</span></h3>
+                        <h3 class="my-profession">I am a <span class="typing">junior web developer</span></h3>
+                        <p>I’m an enthusiastic, detail-oriented junior front-end developer looking for
+                            an entry-level position in the company to use my code-writing skills and
+                            help complete projects on time.</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="profileJPG.jpg" alt="">
+                    </div>    
+                </div>
+            </div>
+        </section>>
         <!--HOME SECTION END-->
     </div>
-    <!--MAIN CONTENT START-->
+    <!--MAIN CONTENT END-->
     </div>
+    <!--MAIN CONTAINER START-->
     <!--JS FILES-->
     <script src="script.js"></script>
   </body>
