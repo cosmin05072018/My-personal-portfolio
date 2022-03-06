@@ -598,3 +598,38 @@ h3.my-profession{
     color: var(--text-black-700);
     line-height: 25px;
 }
+
+/*portofolio*/
+
+.portofolio .container{
+    padding-bottom: 40px;
+}
+
+.portofolio .portofolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portofolio .portofolio-heading h2{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+
+.portofolio .portofolio-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portofolio .portofolio-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portofolio .portofolio-item-inner .portofolio-img img{
+    width: 100%;
+    display: block;
+}
