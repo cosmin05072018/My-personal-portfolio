@@ -27,3 +27,5 @@ function setActiveStyle(color){
         }
     })
 }
+
+/* theme light and drak mode*/
