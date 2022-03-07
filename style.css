@@ -744,6 +744,12 @@ h3.my-profession{
 }
 
 @media (max-width:991px){
+    .contact .contact-info-item,
+    .portofolio .portofolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
     .home .home-info{
         flex: 0 0 100%;
@@ -755,4 +761,14 @@ h3.my-profession{
         display: none;
     }
 }
+
+@media (max-width:767px){
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
 
