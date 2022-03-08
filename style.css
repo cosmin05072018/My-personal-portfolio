@@ -762,9 +762,12 @@ h3.my-profession{
     .aside{
         left: -270px;
     }
+    .aside .nav-toggler{
+        display: flex;
+    }
 
-    .main-content{
-        padding-left: 0;
+    .section{
+        left: 0;
     }
 
     .about .about-content .personal-info .info-item p span{
