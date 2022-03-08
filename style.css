@@ -172,6 +172,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .aside .logo{
@@ -232,6 +233,7 @@ ul{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
