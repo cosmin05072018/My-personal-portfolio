@@ -575,7 +575,7 @@ h3.my-profession {
   color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-text {
+.about .about-content .timeline .timeline-text a{
   line-height: 25px;
   font-size: 16px;
   text-align: justify;
