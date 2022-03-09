@@ -103,12 +103,14 @@ var form = document.getElementById("my-form");
         if (response.ok) {
           status.innerHTML = "Thanks for your submission!";
           form.reset()
+          status.style.color = "green"
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              status.style.color = "red"
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Oops! There was a problem submitting your form";
             }
           })
         }

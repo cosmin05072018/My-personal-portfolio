@@ -765,6 +765,12 @@ h3.my-profession {
   padding: 0 50px;
 }
 
+/*submition*/
+
+#my-form-status{
+  color: #151515;
+}
+
 /*responsive*/
 
 @media (max-width: 1199px) {
