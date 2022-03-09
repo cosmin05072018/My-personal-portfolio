@@ -84,3 +84,5 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+/*FORM SUBMITED*/
