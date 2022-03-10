@@ -825,13 +825,25 @@ h3.my-profession {
     max-width: 50%;
   }
 
-  .home .home-info {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
   .home .home-img {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .home-img::after {
     display: none;
+  }
+  
+  .home-img::before {
+    display: none;
+  }
+  
+  .home .home-img img {
+    margin: auto;
+    border-radius: 10px;
+    height: 400px;
   }
 }
 
