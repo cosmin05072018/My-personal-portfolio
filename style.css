@@ -871,8 +871,8 @@ h3.my-profession {
     max-width: 100%;
 }
 .home .home-img {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 10%;
+  max-width: 10%;
   text-align: center;
   position: relative;
 }
@@ -893,3 +893,48 @@ h3.my-profession {
 }
 
 
+@media (max-width: 372px){
+  .contact .contact-form .col-6,
+  .contact .contact-info-item,
+  .portofolio .portofolio-item,
+  .service .service-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .aside.open {
+    width: 100%;
+  }
+  .aside .nav-toggler.open{
+    left: 0;
+    top: 0;
+  }
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.home .home-img {
+  flex: 0 0 10%;
+  max-width: 10%;
+  text-align: center;
+  position: relative;
+}
+
+.home-img::after {
+  display: none;
+}
+
+.home-img::before {
+  display: none;
+}
+
+.home .home-img img {
+  margin: auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+}
