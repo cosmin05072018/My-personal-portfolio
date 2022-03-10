@@ -893,7 +893,7 @@ h3.my-profession {
 }
 
 
-@media (max-width: 372px){
+@media (max-width: 400px){
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portofolio .portofolio-item,
