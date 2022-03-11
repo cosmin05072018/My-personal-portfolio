@@ -957,6 +957,9 @@ h3.my-profession {
 
   .aside .nav-toggler{
     margin: 10px 0 0 10px;
+      display: flex;
+      left: 1px;
+      top: 5px;
   }
 
   }
