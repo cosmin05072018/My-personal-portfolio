@@ -939,4 +939,10 @@ h3.my-profession {
   width: 200px;
   height: 200px;
 }
+
+.home .home-info {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 }
