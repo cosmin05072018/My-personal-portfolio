@@ -917,10 +917,11 @@ h3.my-profession {
     max-width: 100%;
 }
 .home .home-img {
-  flex: 0 0 10%;
-  max-width: 10%;
+  flex: 0 0 100%;
+  max-width: 100%;
   text-align: center;
   position: relative;
+  padding-top: 20px;
 }
 
 .home-img::after {
@@ -934,7 +935,8 @@ h3.my-profession {
 .home .home-img img {
   margin: auto;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  height: 400;
+  width: 200px;
+  height: 200px;
 }
 }
