@@ -893,7 +893,7 @@ h3.my-profession {
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 320px){
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portofolio .portofolio-item,
@@ -943,6 +943,11 @@ h3.my-profession {
 .home .home-info {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+h3.hello {
+  font-size: 28px;
+  margin: 15px 0;
 }
 
 }
