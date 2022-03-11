@@ -915,7 +915,6 @@ h3.my-profession {
   .about .about-content .personal-info .info-item {
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0;
   }
   .home .home-img {
   flex: 0 0 100%;
@@ -950,6 +949,10 @@ h3.my-profession {
     font-size: 20px;
     margin: 15px 0;
     padding-right: 10px;
+  }
+
+  .home-info p {
+    margin-bottom: 1px;
   }
 
   }
