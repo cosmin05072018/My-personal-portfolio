@@ -915,39 +915,39 @@ h3.my-profession {
   .about .about-content .personal-info .info-item {
     flex: 0 0 100%;
     max-width: 100%;
-}
-.home .home-img {
+  }
+  .home .home-img {
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
   position: relative;
   padding-top: 20px;
-}
+  }
 
-.home-img::after {
+  .home-img::after {
   display: none;
-}
+  }
 
-.home-img::before {
+  .home-img::before {
   display: none;
-}
+  }
 
-.home .home-img img {
+  .home .home-img img {
   margin: auto;
   border-radius: 10%;
   height: 400;
   width: 200px;
   height: 200px;
-}
+  }
 
-.home .home-info {
+  .home .home-info {
   flex: 0 0 100%;
   max-width: 100%;
-}
+  }
 
-h3.hello {
-  font-size: 28px;
-  margin: 15px 0;
-}
+  h3.hello {
+    font-size: 20px;
+    margin: 15px 0;
+  }
 
-}
+  }
