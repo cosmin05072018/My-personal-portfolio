@@ -148,6 +148,7 @@ ul {
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
+  color: var(--text-black-900);
 }
 
 .btn:hover {
