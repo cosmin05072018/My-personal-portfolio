@@ -1,11 +1,12 @@
 {
-    "name": "vendor/dep",
-    "description": "comp",
-    "type": "composer-plugin",
-    "require": {
-        "#": "2.7.6",
-        "ext-mysqlnd": "^0.0.0"
-    },
+    "name": "cosmi/my-personal-portfolio",
+    "description": "personal portofolio",
+    "type": "project",
     "license": "no",
-    "minimum-stability": "dev"
+    "authors": [
+        {
+            "name": "Morari Cosmin"
+        }
+    ],
+    "require": {}
 }
