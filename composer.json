@@ -1,0 +1,11 @@
+{
+    "name": "vendor/dep",
+    "description": "comp",
+    "type": "composer-plugin",
+    "require": {
+        "#": "latest version",
+        "ext-mysqlnd": "^0.0.0"
+    },
+    "license": "no",
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "my-personal-portfolio",
+    "version": "1.0.0",
+    "description": "Link to Website: https://subtle-baklava-5c9b18.netlify.app/   (in progress....)",
+    "main": "html2pdf.bundle.min.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
