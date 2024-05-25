@@ -39,6 +39,10 @@ ul {
   list-style: none;
 }
 
+a {
+  color: var(--text-black-700);
+}
+
 .section {
   background: var(--bg-black-900);
   min-height: 100vh;
@@ -375,7 +379,7 @@ h3.my-profession {
 .home .home-img img {
   margin: auto;
   border-radius: 10px;
-  height: 400px;
+  height: 600px;
 }
 
 /* About */
@@ -831,15 +835,15 @@ h3.my-profession {
     text-align: center;
     position: relative;
   }
-  
+
   .home-img::after {
     display: none;
   }
-  
+
   .home-img::before {
     display: none;
   }
-  
+
   .home .home-img img {
     margin: auto;
     border-radius: 10px;
