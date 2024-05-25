@@ -32,7 +32,7 @@ function sendEmail(fromName, subject, email, message) {
     const templateParams = {
         name: fromName,
         subject: subject,
-        email: "cosmin050718@gmail.com",
+        email: cosmin050718@gmail.com,
         message: message,
     };
 
