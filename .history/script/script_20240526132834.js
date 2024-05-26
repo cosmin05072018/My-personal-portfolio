@@ -90,24 +90,86 @@ function asideSectionTogglerBtn() {
 
 /*FORM SUBMITED*/
 
+// var form = document.getElementById("form");
+
+// async function handleSubmit(event) {
+//   event.preventDefault();
+//   var status = document.getElementById("my-form-status");
+//   var data = new FormData(event.target);
+//   fetch(event.target.action, {
+//     method: form.method,
+//     body: data,
+//     headers: {
+//         'Accept': 'application/json'
+//     }
+//   }).then(response => {
+//     if (response.ok) {var form = document.getElementById("form");
+
+// async function handleSubmit(event) {
+//   event.preventDefault();
+//   var status = document.getElementById("my-form-status");
+//   var data = new FormData(event.target);
+//   fetch(event.target.action, {
+//     method: form.method,
+//     body: data,
+//     headers: {
+//         'Accept': 'application/json'
+//     }
+//   }).then(response => {
+//     if (response.ok) {
+//       status.innerHTML = "Thanks for your submission!";
+//       form.reset()
+//     } else {
+//       response.json().then(data => {
+//         if (Object.hasOwn(data, 'errors')) {
+//           status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+//         } else {
+//           status.innerHTML = "Oops! There was a problem submitting your form"
+//         }
+//       })
+//     }
+//   }).catch(error => {
+//     status.innerHTML = "Oops! There was a problem submitting your form"
+//   });
+// }
+
+
+// form.addEventListener("submit", handleSubmit)
+//       status.innerHTML = "Thanks for your submission!";
+//       form.reset()
+//     } else {
+//       response.json().then(data => {
+//         if (Object.hasOwn(data, 'errors')) {
+//           status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+//         } else {
+//           status.innerHTML = "Oops! There was a problem submitting your form"
+//         }
+//       })
+//     }
+//   }).catch(error => {
+//     status.innerHTML = "Oops! There was a problem submitting your form"
+//   });
+// }
+
+
+// form.addEventListener("submit", handleSubmit)
 var form = document.getElementById("form");
 
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("my-form-status");
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-        'Accept': 'application/json'
-    }
-  }).then(response => {
-    if (response.ok) {var form = document.getElementById("form");
 
-async function handleSubmit(event) {
-  event.preventDefault();
-  var status = document.getElementById("my-form-status");
+  // Verificarea câmpurilor obligatorii
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  if (!name || !email || !subject || !message) {
+    status.innerHTML = "All fields are required.";
+    return;
+  }
+
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -118,41 +180,22 @@ async function handleSubmit(event) {
   }).then(response => {
     if (response.ok) {
       status.innerHTML = "Thanks for your submission!";
-      form.reset()
+      form.reset();
     } else {
       response.json().then(data => {
         if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
         } else {
-          status.innerHTML = "Oops! There was a problem submitting your form"
+          status.innerHTML = "Oops! There was a problem submitting your form";
         }
-      })
+      });
     }
   }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    status.innerHTML = "Oops! There was a problem submitting your form";
   });
 }
 
-
-form.addEventListener("submit", handleSubmit)
-      status.innerHTML = "Thanks for your submission!";
-      form.reset()
-    } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-        } else {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        }
-      })
-    }
-  }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
-  });
-}
-
-
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
 
 function calculateMyAge() {
   const birthDate = new Date(2000, 10, 22); // Anul, luna (0-indexed), ziua
