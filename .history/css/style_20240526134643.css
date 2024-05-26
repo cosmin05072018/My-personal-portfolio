@@ -68,7 +68,7 @@ a {
 }
 
 .error-submission{
-  background-color: #dc3545;
+  background-color: red !important;
   color: #fff !important;
   border-radius: 8px;
   padding: 0.75rem 0.37rem;

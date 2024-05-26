@@ -152,7 +152,6 @@ async function handleSubmit(event) {
               .map((error) => error["message"])
               .join(", ");
           } else {
-            status.classList.add("error-submission");
             status.innerHTML = "Oops! There was a problem submitting your form";
           }
         });
