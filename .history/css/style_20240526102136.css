@@ -47,7 +47,7 @@ a {
   text-align: justify;
 }
 
-.btn-align-center{
+.btn-send-message{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,8 +889,6 @@ h3.my-profession {
   max-width: 10%;
   text-align: center;
   position: relative;
-  display: flex;
-}
 }
 
 .home-img::after {
@@ -905,6 +903,7 @@ h3.my-profession {
   margin: auto;
   border-radius: 10px;
   height: 400px;
+}
 }
 
 
@@ -950,9 +949,9 @@ h3.my-profession {
   .home .home-img img {
   margin: auto;
   border-radius: 10%;
+  height: 400;
   width: 150px;
   height: 200px;
-  object-fit: contain;
   }
 
   .home .home-info {

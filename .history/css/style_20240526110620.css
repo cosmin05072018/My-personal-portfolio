@@ -952,7 +952,6 @@ h3.my-profession {
   border-radius: 10%;
   width: 150px;
   height: 200px;
-  object-fit: contain;
   }
 
   .home .home-info {
