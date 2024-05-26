@@ -90,7 +90,7 @@ function asideSectionTogglerBtn() {
 
 /*FORM SUBMITED*/
 
-var form = document.getElementById("form");
+var form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
   event.preventDefault();
